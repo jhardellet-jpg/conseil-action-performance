@@ -431,22 +431,26 @@
       margin-bottom:18px;
     }
 
-    .stats {
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:18px;
-      margin:30px 0;
-    }
+    
 
-    .stat strong {
-      display:block;
-      color:var(--blue);
-      font-size:29px;
-    }
+   .stats {
+  display:grid;
+  grid-template-columns:0.8fr 1fr 1.3fr;
+  gap:18px;
+  margin:30px 0;
+}
 
-    .stat span {
-      font-size:13px;
-    }
+.stat strong {
+  display:block;
+  color:var(--blue);
+  font-size:29px;
+  white-space:nowrap;
+}
+
+.stat span {
+  display:block;
+  font-size:13px;
+}
 
     .expert-photo {
       min-height:390px;
