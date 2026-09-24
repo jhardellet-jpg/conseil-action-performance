@@ -630,7 +630,114 @@
       .expert-copy h2 {
         font-size:31px;
       }
-    }
+    }/* Correctifs spécifiques mobile */
+@media (max-width: 600px) {
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero {
+    padding: 45px 0;
+    overflow: hidden;
+  }
+
+  .hero-grid,
+  .decision-grid,
+  .expert-grid,
+  .cards,
+  .axes,
+  .stats,
+  .journey,
+  .cta-grid {
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+    line-height: 1.08;
+    overflow-wrap: break-word;
+  }
+
+  .hero p {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 100%;
+  }
+
+  .section-title h2,
+  .decision-copy h2,
+  .expert-copy h2 {
+    font-size: 30px;
+    line-height: 1.15;
+    overflow-wrap: break-word;
+  }
+
+  .section-title p,
+  .decision-copy p,
+  .expert-copy p {
+    max-width: 100%;
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+  .stats {
+    gap: 22px;
+  }
+
+  .stat {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .stat strong {
+    font-size: 34px;
+    white-space: normal;
+  }
+
+  .stat span {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 1.45;
+    overflow-wrap: break-word;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .btn,
+  .cta-buttons a {
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .contact-line {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .legal {
+    text-align: left;
+  }
+}
   </style>
 </head>
 
