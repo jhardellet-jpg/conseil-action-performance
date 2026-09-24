@@ -738,9 +738,159 @@
     text-align: left;
   }
 }
+  /* ==========================================
+   OPTIMISATION MOBILE CAP NEGO
+   ========================================== */
+
+@media (max-width: 600px) {
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  /* HEADER */
+  header {
+    padding: 18px 0;
+  }
+
+  nav {
+    display: block;
+  }
+
+  .brand {
+    font-size: 30px;
+    line-height: 1.05;
+  }
+
+  .brand small {
+    font-size: 13px;
+    margin-top: 7px;
+  }
+
+  .navlinks {
+    display: none;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 48px 0 52px;
+    overflow: hidden;
+  }
+
+  .hero-grid {
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: 43px;
+    line-height: 1.05;
+    letter-spacing: -1.5px;
+    overflow-wrap: break-word;
+  }
+
+  .hero p {
+    font-size: 19px;
+    line-height: 1.5;
+    max-width: 100%;
+  }
+
+  /* TITRES */
+  .section-title h2,
+  .decision-copy h2,
+  .expert-copy h2 {
+    font-size: 36px;
+    line-height: 1.08;
+    letter-spacing: -1px;
+    overflow-wrap: break-word;
+  }
+
+  .section-title p,
+  .decision-copy p,
+  .expert-copy p {
+    font-size: 18px;
+    line-height: 1.55;
+  }
+
+  /* GRILLES */
+  .cards,
+  .axes,
+  .stats,
+  .journey,
+  .timeline,
+  .expert-grid,
+  .decision-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* CARTES */
+  .card {
+    padding: 28px 24px;
+  }
+
+  /* BOUTONS */
+  .btn,
+  .cta-buttons a {
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
+
+  /* IMAGE EXPERT */
+  .expert-visual {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .expert-visual img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* CHIFFRES CLÉS */
+  .stats {
+    gap: 20px;
+  }
+
+  .stat strong {
+    font-size: 38px;
+    white-space: normal;
+  }
+
+  .stat span {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  /* SÉCURITÉ ANTI-DÉBORDEMENT */
+  h1,
+  h2,
+  h3,
+  p,
+  div,
+  span {
+    max-width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
   </style>
 </head>
-
 <body>
 
 <header>
