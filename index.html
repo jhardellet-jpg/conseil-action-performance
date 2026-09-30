@@ -3,8 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="CAP NEGO® accompagne les entreprises dans la préparation, la structuration et la maîtrise de leurs négociations avec la GMS.">
+  <meta name="description" content="Ex-acheteur national chez Intermarché et Système U, Jérôme Hardellet aide les PME agroalimentaires à préparer et maîtriser leurs négociations avec la GMS.">
   <title>CAP NEGO® | Conseil Action Performance</title>
+
+  <!-- NOUVEAU : aperçu quand vous partagez le lien sur LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://conseil-action-performance.fr/">
+  <meta property="og:title" content="CAP NEGO® | Préparer vos négociations GMS avec un ex-acheteur national">
+  <meta property="og:description" content="25 ans côté distributeur, plus de 1 000 négociations. Aujourd'hui, j'aide les PME agroalimentaires à préparer les leurs.">
+  <meta property="og:image" content="https://conseil-action-performance.fr/photo-cap-nego-jerome-hardellet.png">
+
+  <!-- NOUVEAU : carte d'identité lisible par Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "CAP NEGO® – Conseil Action Performance",
+    "url": "https://conseil-action-performance.fr/",
+    "telephone": "+33660574197",
+    "email": "jerome.hardellet@conseil-action-performance.fr",
+    "founder": { "@type": "Person", "name": "Jérôme Hardellet", "sameAs": "https://www.linkedin.com/in/j%C3%A9r%C3%B4me-hardellet/" },
+    "areaServed": "FR"
+  }
+  </script>
 
   <style>
     :root {
@@ -266,6 +287,8 @@
     .decision-map div:nth-child(4){background:#ef812a;}
     .decision-map div:nth-child(5){background:#079ca8;}
     .decision-map div:nth-child(6){background:#e7476a;}
+    /* CORRIGÉ : la 7e case (Juridique / Qualité / RSE) n'avait pas de couleur, texte blanc sur blanc */
+    .decision-map div:nth-child(7){background:#2d9de0;}
 
     .buyer {
       grid-column:1 / -1;
@@ -431,8 +454,6 @@
       margin-bottom:18px;
     }
 
-    
-
    .stats {
   display:grid;
   grid-template-columns:0.8fr 1fr 1.3fr;
@@ -561,6 +582,235 @@
       text-align:right;
       color:var(--muted);
     }
+
+    /* =====================================================
+       NOUVEAUX ÉLÉMENTS (v2) – dans vos couleurs et styles
+       ===================================================== */
+
+    /* Zones à compléter : visibles exprès, à retirer une fois remplies */
+    mark.todo {
+      background:#fff1a6;
+      outline:1px dashed #b89300;
+      color:var(--text);
+      padding:0 3px;
+    }
+
+    /* Phrase d'identité dans le hero */
+    .hero .identity {
+      margin-top:22px;
+      padding-left:16px;
+      border-left:4px solid var(--cyan);
+      font-size:18px;
+    }
+
+    .hero .identity strong {
+      color:#fff;
+    }
+
+    /* Panneau de preuves dans le hero */
+    .hero-step span {
+      font-size:14px;
+      color:#d6ecfb;
+    }
+
+    /* Schéma de décision : légende et rôle */
+    .decision-caption {
+      margin-top:14px;
+      text-align:center;
+      font-weight:700;
+      color:var(--navy);
+    }
+
+    .decision-copy .role {
+      color:var(--blue);
+      font-weight:700;
+      font-size:18px;
+    }
+
+    /* Détail des offres */
+    .card .offer-meta {
+      font-size:13px;
+      color:var(--text);
+      margin-bottom:8px;
+    }
+
+    .card .offer-meta b {
+      display:block;
+      font-size:12px;
+      color:var(--muted);
+    }
+
+    .card .offer-meta + .button {
+      margin-top:auto;
+    }
+
+    .card .offer-last {
+      margin-bottom:20px;
+    }
+
+    /* Explication des 5 axes */
+    .axis p {
+      font-size:13px;
+      color:var(--muted);
+      margin-top:8px;
+    }
+
+    .journey small {
+      display:block;
+      font-weight:400;
+      font-size:12px;
+      opacity:.9;
+    }
+
+    /* Parcours */
+    .expert-copy p {
+      margin-bottom:14px;
+    }
+
+    .expert-copy .roles {
+      list-style:none;
+      margin:18px 0 0;
+    }
+
+    .expert-copy .roles li {
+      padding:8px 0;
+      border-top:1px solid #dbe7f0;
+      font-size:15px;
+    }
+
+    .expert-photo img {
+      max-width:100%;
+      height:auto;
+      border-radius:14px;
+    }
+
+    /* Témoignages */
+    .scores-note {
+      margin-top:10px;
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    .testimonials {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+      margin-top:40px;
+    }
+
+    .testimonial {
+      background:var(--light);
+      border-radius:14px;
+      padding:22px;
+    }
+
+    .testimonial p {
+      font-style:italic;
+      margin-bottom:12px;
+    }
+
+    .testimonial cite {
+      font-style:normal;
+      font-size:13px;
+      font-weight:700;
+      color:var(--navy);
+    }
+
+    /* FAQ */
+    .faq details {
+      background:#fff;
+      border-radius:14px;
+      box-shadow:var(--shadow);
+      padding:20px 24px;
+      margin-bottom:12px;
+      max-width:860px;
+    }
+
+    .faq summary {
+      font-weight:700;
+      font-size:17px;
+      cursor:pointer;
+      list-style:none;
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+    }
+
+    .faq summary::-webkit-details-marker {
+      display:none;
+    }
+
+    .faq summary::after {
+      content:"+";
+      color:var(--blue);
+      font-size:22px;
+      line-height:1;
+    }
+
+    .faq details[open] summary::after {
+      content:"–";
+    }
+
+    .faq details p {
+      margin-top:12px;
+      color:var(--muted);
+    }
+
+    /* Contact en 3 étapes */
+    .final-cta .cta-steps {
+      list-style:none;
+      margin:18px 0 6px;
+      counter-reset:step;
+    }
+
+    .final-cta .cta-steps li {
+      counter-increment:step;
+      position:relative;
+      padding-left:38px;
+      margin:10px 0;
+      color:#eaf6ff;
+    }
+
+    .final-cta .cta-steps li::before {
+      content:counter(step);
+      position:absolute;
+      left:0;
+      top:-1px;
+      width:26px;
+      height:26px;
+      border-radius:50%;
+      background:var(--cyan);
+      color:#fff;
+      font-weight:800;
+      font-size:14px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .final-cta .direct {
+      margin-top:14px;
+      font-size:14px;
+      color:#cfe6f7;
+    }
+
+    .final-cta .direct a {
+      text-decoration:underline;
+    }
+
+    a:focus-visible,
+    summary:focus-visible {
+      outline:3px solid var(--cyan);
+      outline-offset:3px;
+    }
+
+    @media(max-width:950px) {
+      .testimonials {
+        grid-template-columns:1fr;
+      }
+    }
+
+    /* ===== FIN DES NOUVEAUX ÉLÉMENTS ===== */
 
     @media(max-width:950px) {
       .navlinks {
@@ -905,6 +1155,7 @@ img {
   max-width: 100%;
   box-sizing: border-box;
   overflow: hidden;
+  margin-top: 32px;
 }
 
 .hero-steps {
@@ -926,6 +1177,14 @@ img {
   font-size: 20px;
 }
 
+.testimonials {
+  grid-template-columns: 1fr;
+}
+
+.scores {
+  flex-wrap: wrap;
+}
+
 }
 
 
@@ -942,15 +1201,14 @@ img {
       </a>
 
       <div class="navlinks">
-        <a href="#solutions">Solutions</a>
-        <a href="#methode">Méthode</a>
-        <a href="#expertise">Expertise</a>
-        <a href="#references">Références</a>
+        <a href="#solutions">Offres</a>
+        <a href="#expertise">Parcours</a>
+        <a href="#references">Interventions</a>
+        <a href="#faq">Questions</a>
         <a href="#contact">Contact</a>
-        <a class="button button-blue"
-           href="https://score.conseil-action-performance.fr"
-           target="_blank" rel="noopener">
-          Faire mon CAP SCORE
+        <!-- PROVISOIRE : mail pré-rempli. À remplacer par un lien de prise de rendez-vous quand il existera -->
+        <a class="button button-blue" href="mailto:jerome.hardellet@conseil-action-performance.fr?subject=%C3%89change%2020%20minutes%20-%20mon%20enjeu%20GMS&body=Bonjour%20J%C3%A9r%C3%B4me%2C%0A%0AMon%20enjeu%20GMS%20en%20une%20phrase%20%3A%20%0A%0AMes%20disponibilit%C3%A9s%20%3A%20%0A">
+          Échanger 20 minutes
         </a>
       </div>
     </nav>
@@ -970,44 +1228,46 @@ img {
         <span>le rendez-vous.</span>
       </h1>
 
-      <p>
-        Comprendre comment vos clients décident.<br>
-        Mesurer votre préparation.<br>
-        Construire les conditions d'une négociation plus maîtrisée.
+      <!-- NOUVEAU : phrase d'identité -->
+      <p class="identity">
+        Ex-acheteur national au <strong>Groupement des Mousquetaires (Intermarché)</strong>
+        et chez <strong>Système U</strong>. 25 ans côté distributeur.
+        Aujourd'hui, j'aide les PME agroalimentaires à préparer leurs négociations avec la GMS.
       </p>
 
       <div class="hero-actions">
-        <a class="button button-blue"
-           href="https://score.conseil-action-performance.fr"
-           target="_blank" rel="noopener">
-          Évaluer ma maturité GMS
+        <a class="button button-blue" href="mailto:jerome.hardellet@conseil-action-performance.fr?subject=%C3%89change%2020%20minutes%20-%20mon%20enjeu%20GMS&body=Bonjour%20J%C3%A9r%C3%B4me%2C%0A%0AMon%20enjeu%20GMS%20en%20une%20phrase%20%3A%20%0A%0AMes%20disponibilit%C3%A9s%20%3A%20%0A">
+          Échanger 20 minutes
         </a>
 
-        <a class="button button-outline" href="#methode">
-          Découvrir la méthode
+        <a class="button button-outline"
+           href="https://score.conseil-action-performance.fr"
+           target="_blank" rel="noopener">
+          Faire mon CAP SCORE
         </a>
       </div>
     </div>
 
+    <!-- MODIFIÉ : le panneau montre vos preuves au lieu d'un 2e cadre de méthode -->
     <div class="hero-panel">
-      <h3>Des leviers concrets pour gagner dans la négociation GMS</h3>
+      <h3>25 ans de l'autre côté du bureau</h3>
 
       <div class="hero-steps">
         <div class="hero-step">
-          <strong>Diagnostiquer</strong>
-          Comprendre vos leviers
+          <strong>25 ans</strong>
+          <span>en centrale d'achat et en grande distribution</span>
         </div>
         <div class="hero-step">
-          <strong>Structurer</strong>
-          Préparer et argumenter
+          <strong>+1 000</strong>
+          <span>négociations menées face aux fournisseurs</span>
         </div>
         <div class="hero-step">
-          <strong>Négocier</strong>
-          Obtenir des résultats
+          <strong>4 métiers</strong>
+          <span>achats, approvisionnement, direction achats, exploitation</span>
         </div>
         <div class="hero-step">
-          <strong>Performer</strong>
-          Inscrire la valeur dans la durée
+          <strong>AREA</strong>
+          <span>interventions en Normandie, Île-de-France et en interrégional</span>
         </div>
       </div>
     </div>
@@ -1031,6 +1291,11 @@ img {
       <p>
         <strong>Le rendez-vous avec l'acheteur n'est que la partie visible de la négociation.</strong>
       </p>
+
+      <!-- NOUVEAU -->
+      <p class="role">
+        Mon rôle : vous faire préparer la négociation telle que l'enseigne la vit.
+      </p>
     </div>
 
     <div>
@@ -1045,6 +1310,9 @@ img {
         <div>Réseau / Magasins</div>
         <div>Juridique / Qualité / RSE</div>
       </div>
+
+      <!-- NOUVEAU -->
+      <p class="decision-caption">Vous voyez une personne. Sept décident.</p>
     </div>
 
     <div class="targets">
@@ -1068,8 +1336,8 @@ img {
       <div class="eyebrow">Une méthode complète</div>
       <h2>Mesurer. Préparer. Tester. Challenger.</h2>
       <p>
-        Quatre approches complémentaires pour mieux comprendre votre situation,
-        préparer vos décisions commerciales et aborder vos négociations GMS avec davantage de maîtrise.
+        Quatre étapes, selon où vous en êtes. Vous pouvez commencer par n'importe laquelle.
+        Le plus simple reste la première : elle est gratuite et vous dit par où commencer.
       </p>
     </div>
 
@@ -1079,8 +1347,10 @@ img {
         <div class="number">01</div>
         <h4>Mesurer</h4>
         <h3>CAP SCORE GMS®</h3>
-        <p><strong>Où en êtes-vous ?</strong></p>
-        <p>Mesurez votre niveau de préparation et identifiez vos priorités.</p>
+        <p><strong>Où en êtes-vous ?</strong> Mesurez votre niveau de préparation et identifiez vos priorités.</p>
+        <p class="offer-meta"><b>Format</b>Autodiagnostic en ligne : 40 questions, 15 minutes</p>
+        <p class="offer-meta"><b>Prix</b>Gratuit</p>
+        <p class="offer-meta offer-last"><b>Vous repartez avec</b>Un rapport : score sur 100, résultats par axe, niveau de maturité et recommandations hiérarchisées</p>
         <a class="button"
            href="https://score.conseil-action-performance.fr"
            target="_blank" rel="noopener">
@@ -1092,33 +1362,33 @@ img {
         <div class="number">02</div>
         <h4>Préparer</h4>
         <h3>Passeport Acheteur GMS®</h3>
-        <p><strong>Comprendre pour agir.</strong></p>
-        <p>
-          Un référentiel opérationnel pour préparer vos négociations autour de 3 temps et 5 axes.
-        </p>
-        <a class="button" href="#axes">Découvrir le Passeport</a>
+        <p><strong>Comprendre pour agir.</strong> Anticiper les attentes et les objections de l'acheteur, et arriver avec des arguments qui créent de la valeur.</p>
+        <p class="offer-meta"><b>Format</b>Référentiel PDF, à utiliser seul, en accompagnement individuel ou en atelier</p>
+        <p class="offer-meta"><b>Pour qui</b>Dirigeant et équipe commerciale</p>
+        <p class="offer-meta offer-last"><b>Vous repartez avec</b>Pour chaque axe : bonnes pratiques, preuves à réunir, erreurs à éviter, questions à se poser, et des outils de débriefing</p>
+        <a class="button" href="#contact">En parler</a>
       </article>
 
       <article class="card orange">
         <div class="number">03</div>
         <h4>Tester</h4>
         <h3>CAP RMC®</h3>
-        <p><strong>Se confronter au réel.</strong></p>
-        <p>
-          Des mises en situation commerciales pour analyser, arbitrer et mesurer les conséquences de vos décisions.
-        </p>
-        <a class="button" href="#contact">Découvrir CAP RMC</a>
+        <p><strong>Se confronter au réel.</strong> Des situations commerciales concrètes, plusieurs arbitrages possibles, et l'analyse de leurs conséquences.</p>
+        <p class="offer-meta"><b>Format</b>Parcours personnalisé à partir de votre CAP SCORE. En développement : disponible dès aujourd'hui en atelier</p>
+        <p class="offer-meta"><b>Pour qui</b>Du premier référencement aux négociations avec les centrales nationales</p>
+        <p class="offer-meta offer-last"><b>Vous repartez avec</b>Vos points forts confirmés et les compétences à renforcer, au-delà du déclaratif</p>
+        <a class="button" href="#contact">En parler</a>
       </article>
 
       <article class="card purple">
         <div class="number">04</div>
         <h4>Challenger</h4>
         <h3>NEGO SENSEI®</h3>
-        <p><strong>Un regard expert à vos côtés.</strong></p>
-        <p>
-          Un accompagnement ponctuel pour challenger une stratégie, préparer une demande acheteur ou débriefer une négociation.
-        </p>
-        <a class="button" href="#contact">Être accompagné</a>
+        <p><strong>Ne négociez plus seul.</strong> Négociation annuelle, nouvelles conditions imposées, hausse tarifaire, référencement à sécuriser, arbitrage volume ou rentabilité.</p>
+        <p class="offer-meta"><b>Format</b>Intervention ponctuelle, en visio ou en présentiel, calée sur votre échéance</p>
+        <p class="offer-meta"><b>Pour qui</b>Dirigeants, directeurs commerciaux, responsables grands comptes</p>
+        <p class="offer-meta offer-last"><b>Vous repartez avec</b>Une lecture précise de votre situation, des recommandations opérationnelles et un plan d'action</p>
+        <a class="button" href="#contact">En parler</a>
       </article>
 
     </div>
@@ -1130,44 +1400,51 @@ img {
 
     <div class="section-title">
       <div class="eyebrow">Les 5 axes CAP NEGO®</div>
-      <h2>5 dimensions qui conditionnent votre préparation GMS.</h2>
+      <h2>Ce que l'enseigne regarde, au-delà du prix.</h2>
       <p>
         Une négociation ne se résume ni au prix, ni à la qualité du produit.
-        CAP NEGO® analyse la préparation commerciale selon cinq dimensions complémentaires.
+        Le CAP SCORE et le Passeport analysent votre préparation selon cinq dimensions,
+        regroupées en trois temps : entrer, convaincre, durer.
       </p>
     </div>
 
+    <!-- MODIFIÉ : une ligne d'explication par axe. Bandeau ENTRER / CONVAINCRE / DURER conservé et explicité -->
     <div class="axes">
       <div class="axis">
         <div class="axis-icon">1</div>
         <h3>Attractivité de l'offre</h3>
+        <p>Ce que votre produit apporte au rayon et au client final, pas seulement à vous.</p>
       </div>
 
       <div class="axis">
         <div class="axis-icon">2</div>
         <h3>Crédibilité fournisseur</h3>
+        <p>Votre capacité à livrer, suivre et tenir vos engagements.</p>
       </div>
 
       <div class="axis">
         <div class="axis-icon">3</div>
         <h3>Maîtrise économique</h3>
+        <p>Vos coûts et vos marges de manœuvre, chiffrés avant d'entrer.</p>
       </div>
 
       <div class="axis">
         <div class="axis-icon">4</div>
         <h3>Influence & négociation</h3>
+        <p>Qui compte dans l'enseigne pour votre dossier, et comment défendre votre position.</p>
       </div>
 
       <div class="axis">
         <div class="axis-icon">5</div>
         <h3>Pilotage & stratégie</h3>
+        <p>Où vous voulez être dans trois ans, et pourquoi avec cette enseigne.</p>
       </div>
     </div>
 
     <div class="journey">
-      <div>ENTRER</div>
-      <div>CONVAINCRE</div>
-      <div>DURER</div>
+      <div>ENTRER<small>Attractivité et crédibilité</small></div>
+      <div>CONVAINCRE<small>Économie et négociation</small></div>
+      <div>DURER<small>Pilotage</small></div>
     </div>
 
   </div>
@@ -1183,11 +1460,23 @@ img {
         25 ans côté distributeur pour aujourd'hui accompagner ceux qui négocient avec lui.
       </h2>
 
+      <!-- MODIFIÉ : parcours nommé -->
       <p>
-        CAP NEGO® est né d'une expérience concrète des mécanismes de décision
-        de la grande distribution et d'une conviction :
-        un bon produit ouvre une porte. Comprendre son client permet d'entrer.
+        J'ai passé ma carrière en centrale d'achat, au Groupement des Mousquetaires puis chez Système U.
+        J'ai reçu des centaines de fournisseurs, grands groupes comme PME, et j'ai vu ce qui faisait
+        avancer un dossier, ou le faisait tomber, une fois le fournisseur reparti.
       </p>
+
+      <p>
+        Ma conviction : un bon produit ouvre une porte. Comprendre son client permet d'entrer.
+      </p>
+
+      <ul class="roles">
+        <li><strong>Acheteur national</strong> : la négociation en face à face</li>
+        <li><strong>Responsable approvisionnement</strong> : ce que la supply dit de vous</li>
+        <li><strong>Direction achats</strong> : comment les arbitrages se font vraiment</li>
+        <li><strong>Responsable exploitation</strong> : ce qui se passe en magasin après la signature</li>
+      </ul>
 
       <div class="stats">
         <div class="stat">
@@ -1201,8 +1490,8 @@ img {
         </div>
 
         <div class="stat">
-          <strong>4 regards</strong>
-          <span>Achats · Approvisionnement · Direction achats · Exploitation commerciale</span>
+          <strong>Master 2</strong>
+          <span>j'enseigne la négociation et les achats à MBway Caen</span>
         </div>
       </div>
 
@@ -1212,9 +1501,9 @@ img {
     </div>
 
    <div class="expert-photo">
-  <img src="photo-cap-nego-jerome-hardellet.png" alt="Jérôme Hardellet en intervention CAP NEGO">
+  <img src="photo-cap-nego-jerome-hardellet.png" alt="Jérôme Hardellet animant un atelier CAP NEGO devant des dirigeants de PME agroalimentaires">
 </div>
- 
+
   </div>
 </section>
 
@@ -1251,17 +1540,38 @@ img {
 
     </div>
 
-    <div class="scores">
-      <div class="score">
-        <strong>8,5 / 10</strong><br>
-        Satisfaction
-      </div>
 
-      <div class="score">
-        <strong>8,7 / 10</strong><br>
-        Recommandation
-      </div>
+  </div>
+</section>
+
+<!-- NOUVEAU : FAQ -->
+<section id="faq" class="alt faq">
+  <div class="container">
+
+    <div class="section-title">
+      <div class="eyebrow">Avant de m'appeler</div>
+      <h2>Les questions qu'on me pose souvent.</h2>
     </div>
+
+    <details>
+      <summary>Mon entreprise est petite. Est-ce pour moi ?</summary>
+      <p>Oui. Les PME sont celles qui ont le moins de marge d'erreur face à une enseigne, et le moins d'occasions de voir comment une centrale fonctionne de l'intérieur.</p>
+    </details>
+
+    <details>
+      <summary>Vous intervenez où ?</summary>
+      <p>En priorité en Normandie, et aussi dans le Grand Ouest et partout en France, en présentiel ou à distance.</p>
+    </details>
+
+    <details>
+      <summary>Combien ça coûte ?</summary>
+      <p>Le CAP SCORE est gratuit. Pour les accompagnements, je vous fais une proposition après l'échange de 20 minutes, selon votre enjeu.</p>
+    </details>
+
+    <details>
+      <summary>Et si je travaille avec la même enseigne qu'un de vos clients ?</summary>
+      <p>Chaque échange reste confidentiel. S'il existe un conflit d'intérêts avec un client que j'accompagne, je vous le dis dès le premier échange.</p>
+    </details>
 
   </div>
 </section>
@@ -1272,19 +1582,30 @@ img {
     <div>
       <h2>Quel est votre prochain enjeu GMS ?</h2>
       <p>
-        Référencement, développement d'une enseigne, préparation d'une négociation,
-        rentabilité, stratégie commerciale...
+        Référencement, développement d'une enseigne, hausse tarifaire, négociation annuelle,
+        rentabilité... On en parle 20 minutes, sans engagement.
       </p>
-      <p><strong>Un échange de 20 minutes suffit pour trouver le vôtre.</strong></p>
+
+      <!-- NOUVEAU : ce qui se passe pendant les 20 minutes -->
+      <ol class="cta-steps">
+        <li>Vous m'exposez votre situation et votre prochaine échéance.</li>
+        <li>Je vous dis comment l'enseigne risque de la voir.</li>
+        <li>Vous repartez avec au moins une piste concrète, même si on ne travaille pas ensemble.</li>
+      </ol>
+
+      <p class="direct">
+        Vous préférez en direct : <a href="tel:+33660574197">06 60 57 41 97</a>
+        ou <a href="mailto:jerome.hardellet@conseil-action-performance.fr">par mail</a>.
+      </p>
     </div>
 
     <div class="cta-buttons">
-      <a class="button button-outline"
-         href="mailto:jerome.hardellet@conseil-action-performance.fr">
-        Échanger 20 minutes
+      <!-- PROVISOIRE : mail pré-rempli. À remplacer par un lien de prise de rendez-vous quand il existera -->
+      <a class="button button-blue" href="mailto:jerome.hardellet@conseil-action-performance.fr?subject=%C3%89change%2020%20minutes%20-%20mon%20enjeu%20GMS&body=Bonjour%20J%C3%A9r%C3%B4me%2C%0A%0AMon%20enjeu%20GMS%20en%20une%20phrase%20%3A%20%0A%0AMes%20disponibilit%C3%A9s%20%3A%20%0A">
+        Demander mes 20 minutes
       </a>
 
-      <a class="button button-blue"
+      <a class="button button-outline"
          href="https://score.conseil-action-performance.fr"
          target="_blank" rel="noopener">
         Faire mon CAP SCORE
@@ -1310,6 +1631,7 @@ img {
       <a href="mailto:jerome.hardellet@conseil-action-performance.fr">
         jerome.hardellet@conseil-action-performance.fr
       </a>
+      <a href="https://www.linkedin.com/in/j%C3%A9r%C3%B4me-hardellet/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
 
     <div class="legal">
