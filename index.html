@@ -3,17 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ex-acheteur national chez Intermarché et Système U, Jérôme Hardellet aide les PME agroalimentaires à préparer et maîtriser leurs négociations avec la GMS.">
+  <meta name="description" content="Ex-acheteur national au Groupement des Mousquetaires (Intermarché) et chez Système U, Jérôme Hardellet aide les PME agroalimentaires à préparer et maîtriser leurs négociations avec la GMS.">
   <title>CAP NEGO® | Conseil Action Performance</title>
 
-  <!-- NOUVEAU : aperçu quand vous partagez le lien sur LinkedIn -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://conseil-action-performance.fr/">
   <meta property="og:title" content="CAP NEGO® | Préparer vos négociations GMS avec un ex-acheteur national">
   <meta property="og:description" content="25 ans côté distributeur, plus de 1 000 négociations. Aujourd'hui, j'aide les PME agroalimentaires à préparer les leurs.">
   <meta property="og:image" content="https://conseil-action-performance.fr/photo-cap-nego-jerome-hardellet.png">
 
-  <!-- NOUVEAU : carte d'identité lisible par Google -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -45,103 +43,26 @@
       --radius:18px;
     }
 
-    * {
-      box-sizing:border-box;
-      margin:0;
-      padding:0;
-    }
-
-    html {
-      scroll-behavior:smooth;
-    }
-
-    body {
-      font-family:Arial, Helvetica, sans-serif;
-      color:var(--text);
-      background:#fff;
-      line-height:1.5;
-    }
-
-    a {
-      color:inherit;
-      text-decoration:none;
-    }
-
-    .container {
-      width:min(1180px, 90%);
-      margin:auto;
-    }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior:smooth; }
+    body { font-family:Arial, Helvetica, sans-serif; color:var(--text); background:#fff; line-height:1.5; }
+    a { color:inherit; text-decoration:none; }
+    .container { width:min(1180px, 90%); margin:auto; }
 
     /* NAVIGATION */
+    header { background:#fff; position:sticky; top:0; z-index:100; box-shadow:0 2px 12px rgba(0,0,0,.05); }
+    nav { min-height:78px; display:flex; align-items:center; justify-content:space-between; gap:30px; }
+    .brand { font-size:28px; font-weight:800; color:var(--navy); line-height:1; }
+    .brand span { color:var(--blue); }
+    .brand small { display:block; margin-top:7px; font-size:11px; font-weight:500; letter-spacing:.5px; }
+    .navlinks { display:flex; align-items:center; gap:27px; font-size:14px; font-weight:700; }
 
-    header {
-      background:#fff;
-      position:sticky;
-      top:0;
-      z-index:100;
-      box-shadow:0 2px 12px rgba(0,0,0,.05);
-    }
-
-    nav {
-      min-height:78px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:30px;
-    }
-
-    .brand {
-      font-size:28px;
-      font-weight:800;
-      color:var(--navy);
-      line-height:1;
-    }
-
-    .brand span {
-      color:var(--blue);
-    }
-
-    .brand small {
-      display:block;
-      margin-top:7px;
-      font-size:11px;
-      font-weight:500;
-      letter-spacing:.5px;
-    }
-
-    .navlinks {
-      display:flex;
-      align-items:center;
-      gap:27px;
-      font-size:14px;
-      font-weight:700;
-    }
-
-    .button {
-      display:inline-block;
-      padding:13px 22px;
-      border-radius:28px;
-      font-weight:700;
-      font-size:14px;
-      transition:.2s ease;
-    }
-
-    .button:hover {
-      transform:translateY(-2px);
-    }
-
-    .button-blue {
-      background:linear-gradient(90deg,var(--blue),var(--cyan));
-      color:#fff;
-    }
-
-    .button-outline {
-      border:1.5px solid #fff;
-      color:#fff;
-    }
+    .button { display:inline-block; padding:13px 22px; border-radius:28px; font-weight:700; font-size:14px; transition:.2s ease; }
+    .button:hover { transform:translateY(-2px); }
+    .button-blue { background:linear-gradient(90deg,var(--blue),var(--cyan)); color:#fff; }
+    .button-outline { border:1.5px solid #fff; color:#fff; }
 
     /* HERO */
-
     .hero {
       background:
         radial-gradient(circle at 80% 20%, rgba(20,174,233,.24), transparent 28%),
@@ -149,1045 +70,193 @@
       color:#fff;
       padding:80px 0;
     }
-
-    .hero-grid {
-      display:grid;
-      grid-template-columns:1.15fr .85fr;
-      gap:70px;
-      align-items:center;
-    }
-
-    .eyebrow {
-      color:#28b9ff;
-      font-weight:800;
-      text-transform:uppercase;
-      font-size:13px;
-      letter-spacing:.7px;
-      margin-bottom:12px;
-    }
-
-    .hero h1 {
-      font-size:52px;
-      line-height:1.05;
-      max-width:700px;
-      margin-bottom:22px;
-    }
-
-    .hero h1 span {
-      color:#24b4ff;
-    }
-
-    .hero p {
-      font-size:20px;
-      max-width:660px;
-      color:#eaf6ff;
-    }
-
-    .hero-actions {
-      display:flex;
-      gap:14px;
-      margin-top:32px;
-      flex-wrap:wrap;
-    }
-
-    .hero-panel {
-      background:rgba(255,255,255,.08);
-      border:1px solid rgba(255,255,255,.16);
-      border-radius:24px;
-      padding:30px;
-      backdrop-filter:blur(6px);
-    }
-
-    .hero-panel h3 {
-      font-size:23px;
-      margin-bottom:22px;
-    }
-
-    .hero-steps {
-      display:grid;
-      grid-template-columns:repeat(2,1fr);
-      gap:15px;
-    }
-
-    .hero-step {
-      background:rgba(255,255,255,.09);
-      padding:18px;
-      border-radius:14px;
-    }
-
-    .hero-step strong {
-      display:block;
-      color:#39bfff;
-      margin-bottom:4px;
-    }
+    .hero-grid { display:grid; grid-template-columns:1.15fr .85fr; gap:70px; align-items:center; }
+    .eyebrow { color:#28b9ff; font-weight:800; text-transform:uppercase; font-size:13px; letter-spacing:.7px; margin-bottom:12px; }
+    .hero h1 { font-size:52px; line-height:1.05; max-width:700px; margin-bottom:22px; }
+    .hero h1 span { color:#24b4ff; }
+    .hero p { font-size:20px; max-width:660px; color:#eaf6ff; }
+    .hero-actions { display:flex; gap:14px; margin-top:32px; flex-wrap:wrap; }
+    .hero-panel { background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.16); border-radius:24px; padding:30px; backdrop-filter:blur(6px); }
+    .hero-panel h3 { font-size:23px; margin-bottom:22px; }
+    .hero-steps { display:grid; grid-template-columns:repeat(2,1fr); gap:15px; }
+    .hero-step { background:rgba(255,255,255,.09); padding:18px; border-radius:14px; }
+    .hero-step strong { display:block; color:#39bfff; margin-bottom:4px; }
+    .hero .identity { margin-top:22px; padding-left:16px; border-left:4px solid var(--cyan); font-size:18px; }
+    .hero .identity strong { color:#fff; }
+    .hero-step span { font-size:14px; color:#d6ecfb; }
 
     /* SECTIONS */
+    section { padding:75px 0; }
+    section.alt { background:var(--light); }
+    .section-title { max-width:800px; margin-bottom:38px; }
+    .section-title h2 { font-size:38px; line-height:1.1; margin-bottom:12px; }
+    .section-title p { color:var(--muted); font-size:17px; }
 
-    section {
-      padding:75px 0;
-    }
-
-    section.alt {
-      background:var(--light);
-    }
-
-    .section-title {
-      max-width:800px;
-      margin-bottom:38px;
-    }
-
-    .section-title h2 {
-      font-size:38px;
-      line-height:1.1;
-      margin-bottom:12px;
-    }
-
-    .section-title p {
-      color:var(--muted);
-      font-size:17px;
-    }
-
-    /* PROBLEME */
-
-    .decision-grid {
-      display:grid;
-      grid-template-columns:.9fr 1.25fr .75fr;
-      gap:32px;
-      align-items:center;
-    }
-
-    .decision-copy h2 {
-      font-size:38px;
-      line-height:1.05;
-      margin-bottom:18px;
-    }
-
-    .decision-copy p {
-      margin-bottom:14px;
-    }
-
-    .decision-map {
-      display:grid;
-      grid-template-columns:repeat(2,1fr);
-      gap:12px;
-    }
-
-    .decision-map div {
-      padding:16px;
-      border-radius:12px;
-      color:#fff;
-      text-align:center;
-      font-weight:700;
-      font-size:13px;
-    }
-
+    /* DECISION */
+    .decision-grid { display:grid; grid-template-columns:.9fr 1.25fr .75fr; gap:32px; align-items:center; }
+    .decision-copy h2 { font-size:38px; line-height:1.05; margin-bottom:18px; }
+    .decision-copy p { margin-bottom:14px; }
+    .decision-copy .role { color:var(--blue); font-weight:700; font-size:18px; }
+    .decision-map { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; }
+    .decision-map div { padding:16px; border-radius:12px; color:#fff; text-align:center; font-weight:700; font-size:13px; }
     .decision-map div:nth-child(1){background:#2d9de0;}
     .decision-map div:nth-child(2){background:#61b858;}
     .decision-map div:nth-child(3){background:#9636bd;}
     .decision-map div:nth-child(4){background:#ef812a;}
     .decision-map div:nth-child(5){background:#079ca8;}
     .decision-map div:nth-child(6){background:#e7476a;}
-    /* CORRIGÉ : la 7e case (Juridique / Qualité / RSE) n'avait pas de couleur, texte blanc sur blanc */
     .decision-map div:nth-child(7){background:#2d9de0;}
+    .buyer { grid-column:1 / -1; background:var(--navy)!important; font-size:18px!important; }
+    .decision-caption { margin-top:14px; text-align:center; font-weight:700; color:var(--navy); }
+    .targets { background:#eaf6fd; border-radius:18px; padding:25px; }
+    .targets h3 { margin-bottom:15px; }
+    .targets ul { list-style:none; }
+    .targets li { margin:11px 0; padding-left:18px; position:relative; font-size:14px; }
+    .targets li:before { content:"•"; position:absolute; left:0; color:var(--blue); font-weight:bold; }
 
-    .buyer {
-      grid-column:1 / -1;
-      background:var(--navy)!important;
-      font-size:18px!important;
-    }
-
-    .targets {
-      background:#eaf6fd;
-      border-radius:18px;
-      padding:25px;
-    }
-
-    .targets h3 {
-      margin-bottom:15px;
-    }
-
-    .targets ul {
-      list-style:none;
-    }
-
-    .targets li {
-      margin:11px 0;
-      padding-left:18px;
-      position:relative;
-      font-size:14px;
-    }
-
-    .targets li:before {
-      content:"•";
-      position:absolute;
-      left:0;
-      color:var(--blue);
-      font-weight:bold;
-    }
-
-    /* SOLUTIONS */
-
-    .cards {
-      display:grid;
-      grid-template-columns:repeat(4,1fr);
-      gap:18px;
-    }
-
-    .card {
-      background:#fff;
-      padding:26px;
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      display:flex;
-      flex-direction:column;
-      min-height:310px;
-    }
-
-    .number {
-      width:42px;
-      height:42px;
-      border-radius:50%;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      color:#fff;
-      font-weight:800;
-      margin-bottom:18px;
-    }
-
-    .card h3 {
-      font-size:19px;
-      margin-bottom:8px;
-    }
-
-    .card h4 {
-      margin-bottom:11px;
-      font-size:14px;
-      text-transform:uppercase;
-    }
-
-    .card p {
-      font-size:14px;
-      color:var(--muted);
-      margin-bottom:20px;
-    }
-
-    .card .button {
-      margin-top:auto;
-      text-align:center;
-      color:#fff;
-    }
-
+    /* OFFRES */
+    .cards { display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
+    .card { background:#fff; padding:26px; border-radius:var(--radius); box-shadow:var(--shadow); display:flex; flex-direction:column; min-height:310px; }
+    .number { width:42px; height:42px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:800; margin-bottom:18px; }
+    .card h3 { font-size:19px; margin-bottom:8px; }
+    .card h4 { margin-bottom:11px; font-size:14px; text-transform:uppercase; }
+    .card p { font-size:14px; color:var(--muted); margin-bottom:20px; }
+    .card .button { margin-top:auto; text-align:center; color:#fff; }
+    .card .offer-meta { font-size:13px; color:var(--text); margin-bottom:8px; }
+    .card .offer-meta b { display:block; font-size:12px; color:var(--muted); }
+    .card .offer-last { margin-bottom:20px; }
     .blue .number,.blue .button {background:var(--blue);}
     .green .number,.green .button {background:var(--green);}
     .orange .number,.orange .button {background:var(--orange);}
     .purple .number,.purple .button {background:var(--purple);}
 
     /* AXES */
-
-    .axes {
-      display:grid;
-      grid-template-columns:repeat(5,1fr);
-      gap:14px;
-    }
-
-    .axis {
-      text-align:center;
-      padding:20px 12px;
-      border-radius:14px;
-      background:#fff;
-      box-shadow:var(--shadow);
-    }
-
-    .axis-icon {
-      width:48px;
-      height:48px;
-      border-radius:50%;
-      margin:0 auto 12px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      color:#fff;
-      font-weight:800;
-      font-size:20px;
-    }
-
+    .axes { display:grid; grid-template-columns:repeat(5,1fr); gap:14px; }
+    .axis { text-align:center; padding:20px 12px; border-radius:14px; background:#fff; box-shadow:var(--shadow); }
+    .axis-icon { width:48px; height:48px; border-radius:50%; margin:0 auto 12px; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:800; font-size:20px; }
     .axis:nth-child(1) .axis-icon {background:var(--blue);}
     .axis:nth-child(2) .axis-icon {background:var(--green);}
     .axis:nth-child(3) .axis-icon {background:var(--orange);}
     .axis:nth-child(4) .axis-icon {background:var(--purple);}
     .axis:nth-child(5) .axis-icon {background:var(--pink);}
-
-    .axis h3 {
-      font-size:15px;
-    }
-
-    .journey {
-      display:grid;
-      grid-template-columns:2fr 2fr 1fr;
-      margin-top:18px;
-      color:#fff;
-      font-weight:800;
-      text-align:center;
-    }
-
-    .journey div {
-      padding:9px;
-    }
-
+    .axis h3 { font-size:15px; }
+    .axis p { font-size:13px; color:var(--muted); margin-top:8px; }
+    .journey { display:grid; grid-template-columns:2fr 2fr 1fr; margin-top:18px; color:#fff; font-weight:800; text-align:center; }
+    .journey div { padding:9px; }
     .journey div:nth-child(1){background:var(--blue);}
     .journey div:nth-child(2){background:var(--green);}
     .journey div:nth-child(3){background:var(--pink);}
+    .journey small { display:block; font-weight:400; font-size:12px; opacity:.9; }
 
-    /* EXPERTISE */
-
-    .expert-grid {
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:50px;
-      align-items:center;
-    }
-
-    .expert-copy h2 {
-      font-size:38px;
-      line-height:1.08;
-      margin-bottom:18px;
-    }
-
-   .stats {
-  display:grid;
-  grid-template-columns:0.8fr 1fr 1.3fr;
-  gap:18px;
-  margin:30px 0;
-}
-
-.stat strong {
-  display:block;
-  color:var(--blue);
-  font-size:29px;
-  white-space:nowrap;
-}
-
-.stat span {
-  display:block;
-  font-size:13px;
-}
-
+    /* PARCOURS */
+    .expert-grid { display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:center; }
+    .expert-copy h2 { font-size:38px; line-height:1.08; margin-bottom:18px; }
+    .expert-copy p { margin-bottom:14px; }
+    .expert-copy .roles { list-style:none; margin:18px 0 0; }
+    .expert-copy .roles li { padding:8px 0; border-top:1px solid #dbe7f0; font-size:15px; }
+    .stats { display:grid; grid-template-columns:0.8fr 1fr 1.3fr; gap:18px; margin:30px 0; }
+    .stat strong { display:block; color:var(--blue); font-size:29px; white-space:nowrap; }
+    .stat span { display:block; font-size:13px; }
+    .stat-text strong { font-size:20px; white-space:normal; line-height:1.2; padding-top:6px; }
     .expert-photo {
       min-height:390px;
       border-radius:22px;
-      background:
-        linear-gradient(135deg,rgba(5,46,82,.95),rgba(7,139,234,.7));
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      color:#fff;
-      text-align:center;
-      padding:35px;
+      background:linear-gradient(135deg,rgba(5,46,82,.95),rgba(7,139,234,.7));
+      display:flex; align-items:center; justify-content:center;
+      color:#fff; text-align:center; padding:35px;
     }
+    .expert-photo img { max-width:100%; height:auto; border-radius:14px; }
 
-    .expert-photo strong {
-      font-size:25px;
-    }
-
-    /* REFERENCES */
-
-    .timeline {
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:18px;
-      margin-top:30px;
-    }
-
-    .event {
-      border-left:4px solid var(--blue);
-      background:#fff;
-      box-shadow:var(--shadow);
-      padding:22px;
-      border-radius:0 14px 14px 0;
-    }
-
-    .event strong {
-      color:var(--blue);
-      display:block;
-      margin-bottom:7px;
-    }
-
-    .scores {
-      display:flex;
-      gap:18px;
-      margin-top:25px;
-    }
-
-    .score {
-      background:#fff;
-      padding:18px 25px;
-      border-radius:14px;
-      box-shadow:var(--shadow);
-    }
-
-    .score strong {
-      font-size:28px;
-      color:var(--navy);
-    }
-
-    /* CTA */
-
-    .final-cta {
-      background:linear-gradient(110deg,var(--navy-dark),var(--navy));
-      color:#fff;
-      padding:55px 0;
-    }
-
-    .cta-grid {
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:30px;
-    }
-
-    .cta-grid h2 {
-      font-size:32px;
-      margin-bottom:8px;
-    }
-
-    .cta-buttons {
-      display:flex;
-      gap:12px;
-      flex-wrap:wrap;
-    }
-
-    /* FOOTER */
-
-    footer {
-      padding:35px 0;
-      background:#fff;
-    }
-
-    .footer-grid {
-      display:grid;
-      grid-template-columns:1fr 2fr 1fr;
-      gap:25px;
-      align-items:center;
-      font-size:13px;
-    }
-
-    .contact-line {
-      display:flex;
-      flex-wrap:wrap;
-      gap:18px;
-    }
-
-    .legal {
-      text-align:right;
-      color:var(--muted);
-    }
-
-    /* =====================================================
-       NOUVEAUX ÉLÉMENTS (v2) – dans vos couleurs et styles
-       ===================================================== */
-
-    /* Zones à compléter : visibles exprès, à retirer une fois remplies */
-    mark.todo {
-      background:#fff1a6;
-      outline:1px dashed #b89300;
-      color:var(--text);
-      padding:0 3px;
-    }
-
-    /* Phrase d'identité dans le hero */
-    .hero .identity {
-      margin-top:22px;
-      padding-left:16px;
-      border-left:4px solid var(--cyan);
-      font-size:18px;
-    }
-
-    .hero .identity strong {
-      color:#fff;
-    }
-
-    /* Panneau de preuves dans le hero */
-    .hero-step span {
-      font-size:14px;
-      color:#d6ecfb;
-    }
-
-    /* Schéma de décision : légende et rôle */
-    .decision-caption {
-      margin-top:14px;
-      text-align:center;
-      font-weight:700;
-      color:var(--navy);
-    }
-
-    .decision-copy .role {
-      color:var(--blue);
-      font-weight:700;
-      font-size:18px;
-    }
-
-    /* Détail des offres */
-    .card .offer-meta {
-      font-size:13px;
-      color:var(--text);
-      margin-bottom:8px;
-    }
-
-    .card .offer-meta b {
-      display:block;
-      font-size:12px;
-      color:var(--muted);
-    }
-
-    .card .offer-meta + .button {
-      margin-top:auto;
-    }
-
-    .card .offer-last {
-      margin-bottom:20px;
-    }
-
-    /* Explication des 5 axes */
-    .axis p {
-      font-size:13px;
-      color:var(--muted);
-      margin-top:8px;
-    }
-
-    .journey small {
-      display:block;
-      font-weight:400;
-      font-size:12px;
-      opacity:.9;
-    }
-
-    /* Parcours */
-    .expert-copy p {
-      margin-bottom:14px;
-    }
-
-    .expert-copy .roles {
-      list-style:none;
-      margin:18px 0 0;
-    }
-
-    .expert-copy .roles li {
-      padding:8px 0;
-      border-top:1px solid #dbe7f0;
-      font-size:15px;
-    }
-
-    .expert-photo img {
-      max-width:100%;
-      height:auto;
-      border-radius:14px;
-    }
-
-    /* Témoignages */
-    .scores-note {
-      margin-top:10px;
-      font-size:13px;
-      color:var(--muted);
-    }
-
-    .testimonials {
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:18px;
-      margin-top:40px;
-    }
-
-    .testimonial {
-      background:var(--light);
-      border-radius:14px;
-      padding:22px;
-    }
-
-    .testimonial p {
-      font-style:italic;
-      margin-bottom:12px;
-    }
-
-    .testimonial cite {
-      font-style:normal;
-      font-size:13px;
-      font-weight:700;
-      color:var(--navy);
-    }
+    /* INTERVENTIONS */
+    .timeline { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:30px; }
+    .event { border-left:4px solid var(--blue); background:#fff; box-shadow:var(--shadow); padding:22px; border-radius:0 14px 14px 0; }
+    .event strong { color:var(--blue); display:block; margin-bottom:7px; }
 
     /* FAQ */
-    .faq details {
-      background:#fff;
-      border-radius:14px;
-      box-shadow:var(--shadow);
-      padding:20px 24px;
-      margin-bottom:12px;
-      max-width:860px;
-    }
+    .faq details { background:#fff; border-radius:14px; box-shadow:var(--shadow); padding:20px 24px; margin-bottom:12px; max-width:860px; }
+    .faq summary { font-weight:700; font-size:17px; cursor:pointer; list-style:none; display:flex; justify-content:space-between; gap:20px; }
+    .faq summary::-webkit-details-marker { display:none; }
+    .faq summary::after { content:"+"; color:var(--blue); font-size:22px; line-height:1; }
+    .faq details[open] summary::after { content:"–"; }
+    .faq details p { margin-top:12px; color:var(--muted); }
 
-    .faq summary {
-      font-weight:700;
-      font-size:17px;
-      cursor:pointer;
-      list-style:none;
-      display:flex;
-      justify-content:space-between;
-      gap:20px;
-    }
-
-    .faq summary::-webkit-details-marker {
-      display:none;
-    }
-
-    .faq summary::after {
-      content:"+";
-      color:var(--blue);
-      font-size:22px;
-      line-height:1;
-    }
-
-    .faq details[open] summary::after {
-      content:"–";
-    }
-
-    .faq details p {
-      margin-top:12px;
-      color:var(--muted);
-    }
-
-    /* Contact en 3 étapes */
-    .final-cta .cta-steps {
-      list-style:none;
-      margin:18px 0 6px;
-      counter-reset:step;
-    }
-
-    .final-cta .cta-steps li {
-      counter-increment:step;
-      position:relative;
-      padding-left:38px;
-      margin:10px 0;
-      color:#eaf6ff;
-    }
-
+    /* CONTACT */
+    .final-cta { background:linear-gradient(110deg,var(--navy-dark),var(--navy)); color:#fff; padding:55px 0; }
+    .cta-grid { display:flex; align-items:center; justify-content:space-between; gap:30px; }
+    .cta-grid h2 { font-size:32px; margin-bottom:8px; }
+    .cta-buttons { display:flex; gap:12px; flex-wrap:wrap; }
+    .final-cta .cta-steps { list-style:none; margin:18px 0 6px; counter-reset:step; }
+    .final-cta .cta-steps li { counter-increment:step; position:relative; padding-left:38px; margin:10px 0; color:#eaf6ff; }
     .final-cta .cta-steps li::before {
-      content:counter(step);
-      position:absolute;
-      left:0;
-      top:-1px;
-      width:26px;
-      height:26px;
-      border-radius:50%;
-      background:var(--cyan);
-      color:#fff;
-      font-weight:800;
-      font-size:14px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
+      content:counter(step); position:absolute; left:0; top:-1px;
+      width:26px; height:26px; border-radius:50%; background:var(--cyan);
+      color:#fff; font-weight:800; font-size:14px;
+      display:flex; align-items:center; justify-content:center;
     }
+    .final-cta .direct { margin-top:14px; font-size:14px; color:#cfe6f7; }
+    .final-cta .direct a { text-decoration:underline; }
 
-    .final-cta .direct {
-      margin-top:14px;
-      font-size:14px;
-      color:#cfe6f7;
-    }
+    /* PIED DE PAGE */
+    footer { padding:35px 0; background:#fff; }
+    .footer-grid { display:grid; grid-template-columns:1fr 2fr 1fr; gap:25px; align-items:center; font-size:13px; }
+    .contact-line { display:flex; flex-wrap:wrap; gap:18px; }
+    .legal { text-align:right; color:var(--muted); }
 
-    .final-cta .direct a {
-      text-decoration:underline;
-    }
+    a:focus-visible, summary:focus-visible { outline:3px solid var(--cyan); outline-offset:3px; }
 
-    a:focus-visible,
-    summary:focus-visible {
-      outline:3px solid var(--cyan);
-      outline-offset:3px;
-    }
-
+    /* TABLETTE */
     @media(max-width:950px) {
-      .testimonials {
-        grid-template-columns:1fr;
-      }
+      .navlinks { display:none; }
+      .hero-grid, .decision-grid, .expert-grid { grid-template-columns:1fr; }
+      .cards { grid-template-columns:repeat(2,1fr); }
+      .axes { grid-template-columns:repeat(2,1fr); }
+      .timeline { grid-template-columns:1fr; }
+      .footer-grid { grid-template-columns:1fr; }
+      .legal { text-align:left; }
     }
 
-    /* ===== FIN DES NOUVEAUX ÉLÉMENTS ===== */
+    /* MOBILE : bloc unique */
+    @media (max-width:600px) {
+      html, body { width:100%; max-width:100%; overflow-x:hidden; }
+      .container { width:100%; max-width:100%; padding-left:22px; padding-right:22px; }
 
-    @media(max-width:950px) {
-      .navlinks {
-        display:none;
-      }
+      header { padding:18px 0; }
+      nav { display:block; }
+      .brand { font-size:30px; line-height:1.05; }
+      .brand small { font-size:13px; margin-top:7px; }
 
-      .hero-grid,
-      .decision-grid,
-      .expert-grid {
-        grid-template-columns:1fr;
-      }
+      .hero { padding:48px 0 52px; overflow:hidden; }
+      .hero-grid { display:block; }
+      .hero h1 { font-size:40px; line-height:1.06; letter-spacing:-1px; overflow-wrap:break-word; }
+      .hero p { font-size:18px; line-height:1.5; max-width:100%; }
+      .hero-panel { margin-top:32px; padding:22px; }
+      .hero-steps { grid-template-columns:1fr; gap:12px; }
+      .hero-step { padding:16px 14px; }
+      .hero-step strong { font-size:20px; }
 
-      .cards {
-        grid-template-columns:repeat(2,1fr);
-      }
+      .section-title h2, .decision-copy h2, .expert-copy h2 { font-size:32px; line-height:1.1; letter-spacing:-.5px; overflow-wrap:break-word; }
+      .section-title p, .decision-copy p, .expert-copy p { font-size:17px; line-height:1.55; }
 
-      .axes {
-        grid-template-columns:repeat(2,1fr);
-      }
+      .decision-grid, .expert-grid, .cards, .axes, .stats, .journey, .timeline, .footer-grid { grid-template-columns:1fr; }
 
-      .timeline {
-        grid-template-columns:1fr;
-      }
+      .card { padding:28px 24px; min-height:0; }
 
-      .footer-grid {
-        grid-template-columns:1fr;
-      }
+      .stats { gap:20px; }
+      .stat strong { font-size:34px; white-space:normal; }
+      .stat span { font-size:16px; line-height:1.4; }
+      .stat-text strong { font-size:22px; }
 
-      .legal {
-        text-align:left;
-      }
+      .expert-photo { min-height:0; padding:0; background:none; }
+      .expert-photo img { width:100%; border-radius:18px; }
+
+      .cta-grid { display:block; }
+      .cta-buttons { margin-top:25px; }
+      .button { max-width:100%; white-space:normal; text-align:center; }
+
+      .contact-line { flex-direction:column; align-items:flex-start; gap:8px; }
+      .legal { text-align:left; }
+      img { max-width:100%; height:auto; }
     }
-
-    @media(max-width:600px) {
-      .hero {
-        padding:55px 0;
-      }
-
-      .hero h1 {
-        font-size:38px;
-      }
-
-      .hero p {
-        font-size:17px;
-      }
-
-      .cards,
-      .axes,
-      .stats {
-        grid-template-columns:1fr;
-      }
-
-      .journey {
-        grid-template-columns:1fr;
-      }
-
-      .cta-grid {
-        display:block;
-      }
-
-      .cta-buttons {
-        margin-top:25px;
-      }
-
-      .section-title h2,
-      .decision-copy h2,
-      .expert-copy h2 {
-        font-size:31px;
-      }
-    }/* Correctifs spécifiques mobile */
-@media (max-width: 600px) {
-
-  html,
-  body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
-  .container {
-    width: 100%;
-    max-width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .hero {
-    padding: 45px 0;
-    overflow: hidden;
-  }
-
-  .hero-grid,
-  .decision-grid,
-  .expert-grid,
-  .cards,
-  .axes,
-  .stats,
-  .journey,
-  .cta-grid {
-    width: 100%;
-    max-width: 100%;
-    grid-template-columns: 1fr;
-  }
-
-  .hero h1 {
-    font-size: 38px;
-    line-height: 1.08;
-    overflow-wrap: break-word;
-  }
-
-  .hero p {
-    font-size: 18px;
-    line-height: 1.5;
-    max-width: 100%;
-  }
-
-  .section-title h2,
-  .decision-copy h2,
-  .expert-copy h2 {
-    font-size: 30px;
-    line-height: 1.15;
-    overflow-wrap: break-word;
-  }
-
-  .section-title p,
-  .decision-copy p,
-  .expert-copy p {
-    max-width: 100%;
-    font-size: 17px;
-    line-height: 1.55;
-  }
-
-  .stats {
-    gap: 22px;
-  }
-
-  .stat {
-    width: 100%;
-    min-width: 0;
-  }
-
-  .stat strong {
-    font-size: 34px;
-    white-space: normal;
-  }
-
-  .stat span {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    font-size: 15px;
-    line-height: 1.45;
-    overflow-wrap: break-word;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .btn,
-  .cta-buttons a {
-    max-width: 100%;
-    white-space: normal;
-    text-align: center;
-  }
-
-  .contact-line {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-  }
-
-  .legal {
-    text-align: left;
-  }
-}
-  /* ==========================================
-   OPTIMISATION MOBILE CAP NEGO
-   ========================================== */
-
-@media (max-width: 600px) {
-
-  html,
-  body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
-  .container {
-    width: 100%;
-    max-width: 100%;
-    padding-left: 22px;
-    padding-right: 22px;
-  }
-
-  /* HEADER */
-  header {
-    padding: 18px 0;
-  }
-
-  nav {
-    display: block;
-  }
-
-  .brand {
-    font-size: 30px;
-    line-height: 1.05;
-  }
-
-  .brand small {
-    font-size: 13px;
-    margin-top: 7px;
-  }
-
-  .navlinks {
-    display: none;
-  }
-
-  /* HERO */
-  .hero {
-    padding: 48px 0 52px;
-    overflow: hidden;
-  }
-
-  .hero-grid {
-    display: block;
-  }
-
-  .hero h1 {
-    font-size: 43px;
-    line-height: 1.05;
-    letter-spacing: -1.5px;
-    overflow-wrap: break-word;
-  }
-
-  .hero p {
-    font-size: 19px;
-    line-height: 1.5;
-    max-width: 100%;
-  }
-
-  /* TITRES */
-  .section-title h2,
-  .decision-copy h2,
-  .expert-copy h2 {
-    font-size: 36px;
-    line-height: 1.08;
-    letter-spacing: -1px;
-    overflow-wrap: break-word;
-  }
-
-  .section-title p,
-  .decision-copy p,
-  .expert-copy p {
-    font-size: 18px;
-    line-height: 1.55;
-  }
-
-  /* GRILLES */
-  .cards,
-  .axes,
-  .stats,
-  .journey,
-  .timeline,
-  .expert-grid,
-  .decision-grid,
-  .footer-grid {
-    grid-template-columns: 1fr;
-  }
-
-  /* CARTES */
-  .card {
-    padding: 28px 24px;
-  }
-
-  /* BOUTONS */
-  .btn,
-  .cta-buttons a {
-    max-width: 100%;
-    white-space: normal;
-    text-align: center;
-  }
-
-  /* IMAGE EXPERT - MOBILE */
-.expert-visual {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  min-height: 0;
- padding: 0;
-  box-sizing: border-box;
-}
-
-.expert-visual img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto;
-}
-
-  /* CHIFFRES CLÉS */
-  .stats {
-    gap: 20px;
-  }
-
-  .stat strong {
-    font-size: 38px;
-    white-space: normal;
-  }
-
-  .stat span {
-    font-size: 16px;
-    line-height: 1.4;
-  }
-
-  /* SÉCURITÉ ANTI-DÉBORDEMENT */
-  h1,
-  h2,
-  h3,
-  p,
-  div,
-  span {
-    max-width: 100%;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* CORRECTION PANNEAU HERO MOBILE */
-.hero-panel {
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-  overflow: hidden;
-  margin-top: 32px;
-}
-
-.hero-steps {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 12px;
-  width: 100%;
-}
-
-.hero-step {
-  min-width: 0;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 16px 12px;
-  overflow-wrap: break-word;
-}
-
-.hero-step strong {
-  font-size: 20px;
-}
-
-.testimonials {
-  grid-template-columns: 1fr;
-}
-
-.scores {
-  flex-wrap: wrap;
-}
-
-}
-
-
   </style>
 </head>
 <body>
@@ -1199,17 +268,13 @@ img {
         CAP <span>NEGO®</span>
         <small>Conseil | Action | Performance</small>
       </a>
-
       <div class="navlinks">
         <a href="#solutions">Offres</a>
         <a href="#expertise">Parcours</a>
         <a href="#references">Interventions</a>
         <a href="#faq">Questions</a>
         <a href="#contact">Contact</a>
-        <!-- PROVISOIRE : mail pré-rempli. À remplacer par un lien de prise de rendez-vous quand il existera -->
-        <a class="button button-blue" href="mailto:jerome.hardellet@conseil-action-performance.fr?subject=%C3%89change%2020%20minutes%20-%20mon%20enjeu%20GMS&body=Bonjour%20J%C3%A9r%C3%B4me%2C%0A%0AMon%20enjeu%20GMS%20en%20une%20phrase%20%3A%20%0A%0AMes%20disponibilit%C3%A9s%20%3A%20%0A">
-          Échanger 20 minutes
-        </a>
+        <a class="button button-blue" href="mailto:jerome.hardellet@conseil-action-performance.fr?subject=%C3%89change%2020%20minutes%20-%20mon%20enjeu%20GMS&body=Bonjour%20J%C3%A9r%C3%B4me%2C%0A%0AMon%20enjeu%20GMS%20en%20une%20phrase%20%3A%20%0A%0AMes%20disponibilit%C3%A9s%20%3A%20%0A">Échanger 20 minutes</a>
       </div>
     </nav>
   </div>
@@ -1219,428 +284,5 @@ img {
 
 <section class="hero">
   <div class="container hero-grid">
-
     <div>
       <div class="eyebrow">CAP NEGO® — Conseil Action Performance</div>
-
-      <h1>
-        Les meilleures négociations commencent bien avant
-        <span>le rendez-vous.</span>
-      </h1>
-
-      <!-- NOUVEAU : phrase d'identité -->
-      <p class="identity">
-        Ex-acheteur national au <strong>Groupement des Mousquetaires (Intermarché)</strong>
-        et chez <strong>Système U</strong>. 25 ans côté distributeur.
-        Aujourd'hui, j'aide les PME agroalimentaires à préparer leurs négociations avec la GMS.
-      </p>
-
-      <div class="hero-actions">
-        <a class="button button-blue" href="mailto:jerome.hardellet@conseil-action-performance.fr?subject=%C3%89change%2020%20minutes%20-%20mon%20enjeu%20GMS&body=Bonjour%20J%C3%A9r%C3%B4me%2C%0A%0AMon%20enjeu%20GMS%20en%20une%20phrase%20%3A%20%0A%0AMes%20disponibilit%C3%A9s%20%3A%20%0A">
-          Échanger 20 minutes
-        </a>
-
-        <a class="button button-outline"
-           href="https://score.conseil-action-performance.fr"
-           target="_blank" rel="noopener">
-          Faire mon CAP SCORE
-        </a>
-      </div>
-    </div>
-
-    <!-- MODIFIÉ : le panneau montre vos preuves au lieu d'un 2e cadre de méthode -->
-    <div class="hero-panel">
-      <h3>25 ans de l'autre côté du bureau</h3>
-
-      <div class="hero-steps">
-        <div class="hero-step">
-          <strong>25 ans</strong>
-          <span>en centrale d'achat et en grande distribution</span>
-        </div>
-        <div class="hero-step">
-          <strong>+1 000</strong>
-          <span>négociations menées face aux fournisseurs</span>
-        </div>
-        <div class="hero-step">
-          <strong>4 métiers</strong>
-          <span>achats, approvisionnement, direction achats, exploitation</span>
-        </div>
-        <div class="hero-step">
-          <strong>AREA</strong>
-          <span>interventions en Normandie, Île-de-France et en interrégional</span>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section>
-  <div class="container decision-grid">
-
-    <div class="decision-copy">
-      <div class="eyebrow">Le défi des entreprises</div>
-
-      <h2>L'acheteur ne décide pas seul.</h2>
-
-      <p>
-        En GMS, une décision ne dépend jamais d'un seul interlocuteur.
-        Elle doit pouvoir être justifiée, validée puis exécutée par différents acteurs de l'enseigne.
-      </p>
-
-      <p>
-        <strong>Le rendez-vous avec l'acheteur n'est que la partie visible de la négociation.</strong>
-      </p>
-
-      <!-- NOUVEAU -->
-      <p class="role">
-        Mon rôle : vous faire préparer la négociation telle que l'enseigne la vit.
-      </p>
-    </div>
-
-    <div>
-      <div class="eyebrow">Un système de décision multi-acteurs</div>
-
-      <div class="decision-map">
-        <div class="buyer">ACHETEUR</div>
-        <div>Direction commerciale</div>
-        <div>Category Management</div>
-        <div>Marketing / Promotion</div>
-        <div>Supply / Logistique</div>
-        <div>Réseau / Magasins</div>
-        <div>Juridique / Qualité / RSE</div>
-      </div>
-
-      <!-- NOUVEAU -->
-      <p class="decision-caption">Vous voyez une personne. Sept décident.</p>
-    </div>
-
-    <div class="targets">
-      <h3>CAP NEGO s'adresse notamment aux :</h3>
-      <ul>
-        <li>PME agroalimentaires</li>
-        <li>Marques en développement</li>
-        <li>Entreprises souhaitant entrer en GMS</li>
-        <li>Fournisseurs déjà référencés souhaitant développer leurs positions</li>
-        <li>Équipes commerciales préparant une négociation importante</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
-
-<section id="solutions" class="alt">
-  <div class="container">
-
-    <div class="section-title" id="methode">
-      <div class="eyebrow">Une méthode complète</div>
-      <h2>Mesurer. Préparer. Tester. Challenger.</h2>
-      <p>
-        Quatre étapes, selon où vous en êtes. Vous pouvez commencer par n'importe laquelle.
-        Le plus simple reste la première : elle est gratuite et vous dit par où commencer.
-      </p>
-    </div>
-
-    <div class="cards">
-
-      <article class="card blue">
-        <div class="number">01</div>
-        <h4>Mesurer</h4>
-        <h3>CAP SCORE GMS®</h3>
-        <p><strong>Où en êtes-vous ?</strong> Mesurez votre niveau de préparation et identifiez vos priorités.</p>
-        <p class="offer-meta"><b>Format</b>Autodiagnostic en ligne : 40 questions, 15 minutes</p>
-        <p class="offer-meta"><b>Prix</b>Gratuit</p>
-        <p class="offer-meta offer-last"><b>Vous repartez avec</b>Un rapport : score sur 100, résultats par axe, niveau de maturité et recommandations hiérarchisées</p>
-        <a class="button"
-           href="https://score.conseil-action-performance.fr"
-           target="_blank" rel="noopener">
-          Faire mon diagnostic
-        </a>
-      </article>
-
-      <article class="card green">
-        <div class="number">02</div>
-        <h4>Préparer</h4>
-        <h3>Passeport Acheteur GMS®</h3>
-        <p><strong>Comprendre pour agir.</strong> Anticiper les attentes et les objections de l'acheteur, et arriver avec des arguments qui créent de la valeur.</p>
-        <p class="offer-meta"><b>Format</b>Référentiel PDF, à utiliser seul, en accompagnement individuel ou en atelier</p>
-        <p class="offer-meta"><b>Pour qui</b>Dirigeant et équipe commerciale</p>
-        <p class="offer-meta offer-last"><b>Vous repartez avec</b>Pour chaque axe : bonnes pratiques, preuves à réunir, erreurs à éviter, questions à se poser, et des outils de débriefing</p>
-        <a class="button" href="#contact">En parler</a>
-      </article>
-
-      <article class="card orange">
-        <div class="number">03</div>
-        <h4>Tester</h4>
-        <h3>CAP RMC®</h3>
-        <p><strong>Se confronter au réel.</strong> Des situations commerciales concrètes, plusieurs arbitrages possibles, et l'analyse de leurs conséquences.</p>
-        <p class="offer-meta"><b>Format</b>Parcours personnalisé à partir de votre CAP SCORE. En développement : disponible dès aujourd'hui en atelier</p>
-        <p class="offer-meta"><b>Pour qui</b>Du premier référencement aux négociations avec les centrales nationales</p>
-        <p class="offer-meta offer-last"><b>Vous repartez avec</b>Vos points forts confirmés et les compétences à renforcer, au-delà du déclaratif</p>
-        <a class="button" href="#contact">En parler</a>
-      </article>
-
-      <article class="card purple">
-        <div class="number">04</div>
-        <h4>Challenger</h4>
-        <h3>NEGO SENSEI®</h3>
-        <p><strong>Ne négociez plus seul.</strong> Négociation annuelle, nouvelles conditions imposées, hausse tarifaire, référencement à sécuriser, arbitrage volume ou rentabilité.</p>
-        <p class="offer-meta"><b>Format</b>Intervention ponctuelle, en visio ou en présentiel, calée sur votre échéance</p>
-        <p class="offer-meta"><b>Pour qui</b>Dirigeants, directeurs commerciaux, responsables grands comptes</p>
-        <p class="offer-meta offer-last"><b>Vous repartez avec</b>Une lecture précise de votre situation, des recommandations opérationnelles et un plan d'action</p>
-        <a class="button" href="#contact">En parler</a>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<section id="axes">
-  <div class="container">
-
-    <div class="section-title">
-      <div class="eyebrow">Les 5 axes CAP NEGO®</div>
-      <h2>Ce que l'enseigne regarde, au-delà du prix.</h2>
-      <p>
-        Une négociation ne se résume ni au prix, ni à la qualité du produit.
-        Le CAP SCORE et le Passeport analysent votre préparation selon cinq dimensions,
-        regroupées en trois temps : entrer, convaincre, durer.
-      </p>
-    </div>
-
-    <!-- MODIFIÉ : une ligne d'explication par axe. Bandeau ENTRER / CONVAINCRE / DURER conservé et explicité -->
-    <div class="axes">
-      <div class="axis">
-        <div class="axis-icon">1</div>
-        <h3>Attractivité de l'offre</h3>
-        <p>Ce que votre produit apporte au rayon et au client final, pas seulement à vous.</p>
-      </div>
-
-      <div class="axis">
-        <div class="axis-icon">2</div>
-        <h3>Crédibilité fournisseur</h3>
-        <p>Votre capacité à livrer, suivre et tenir vos engagements.</p>
-      </div>
-
-      <div class="axis">
-        <div class="axis-icon">3</div>
-        <h3>Maîtrise économique</h3>
-        <p>Vos coûts et vos marges de manœuvre, chiffrés avant d'entrer.</p>
-      </div>
-
-      <div class="axis">
-        <div class="axis-icon">4</div>
-        <h3>Influence & négociation</h3>
-        <p>Qui compte dans l'enseigne pour votre dossier, et comment défendre votre position.</p>
-      </div>
-
-      <div class="axis">
-        <div class="axis-icon">5</div>
-        <h3>Pilotage & stratégie</h3>
-        <p>Où vous voulez être dans trois ans, et pourquoi avec cette enseigne.</p>
-      </div>
-    </div>
-
-    <div class="journey">
-      <div>ENTRER<small>Attractivité et crédibilité</small></div>
-      <div>CONVAINCRE<small>Économie et négociation</small></div>
-      <div>DURER<small>Pilotage</small></div>
-    </div>
-
-  </div>
-</section>
-
-<section id="expertise" class="alt">
-  <div class="container expert-grid">
-
-    <div class="expert-copy">
-      <div class="eyebrow">Une expérience concrète du terrain</div>
-
-      <h2>
-        25 ans côté distributeur pour aujourd'hui accompagner ceux qui négocient avec lui.
-      </h2>
-
-      <!-- MODIFIÉ : parcours nommé -->
-      <p>
-        J'ai passé ma carrière en centrale d'achat, au Groupement des Mousquetaires puis chez Système U.
-        J'ai reçu des centaines de fournisseurs, grands groupes comme PME, et j'ai vu ce qui faisait
-        avancer un dossier, ou le faisait tomber, une fois le fournisseur reparti.
-      </p>
-
-      <p>
-        Ma conviction : un bon produit ouvre une porte. Comprendre son client permet d'entrer.
-      </p>
-
-      <ul class="roles">
-        <li><strong>Acheteur national</strong> : la négociation en face à face</li>
-        <li><strong>Responsable approvisionnement</strong> : ce que la supply dit de vous</li>
-        <li><strong>Direction achats</strong> : comment les arbitrages se font vraiment</li>
-        <li><strong>Responsable exploitation</strong> : ce qui se passe en magasin après la signature</li>
-      </ul>
-
-      <div class="stats">
-        <div class="stat">
-          <strong>25 ans</strong>
-          <span>d'expérience dans la grande distribution</span>
-        </div>
-
-        <div class="stat">
-          <strong>+1 000</strong>
-          <span>négociations avec des fournisseurs de toutes tailles</span>
-        </div>
-
-        <div class="stat">
-          <strong>Master 2</strong>
-          <span>j'enseigne la négociation et les achats à MBway Caen</span>
-        </div>
-      </div>
-
-      <a class="button button-blue" href="#contact">
-        Échanger sur mon enjeu
-      </a>
-    </div>
-
-   <div class="expert-photo">
-  <img src="photo-cap-nego-jerome-hardellet.png" alt="Jérôme Hardellet animant un atelier CAP NEGO devant des dirigeants de PME agroalimentaires">
-</div>
-
-  </div>
-</section>
-
-<section id="references">
-  <div class="container">
-
-    <div class="section-title">
-      <div class="eyebrow">CAP NEGO® sur le terrain</div>
-      <h2>Une méthode confrontée au terrain.</h2>
-      <p>
-        Des interventions auprès d'entreprises agroalimentaires de plusieurs régions françaises.
-      </p>
-    </div>
-
-    <div class="timeline">
-
-      <div class="event">
-        <strong>Janvier 2026</strong>
-        <h3>Webinaire interrégional AREA</h3>
-        <p>Normandie · Île-de-France · Nouvelle-Aquitaine · Occitanie</p>
-      </div>
-
-      <div class="event">
-        <strong>Juillet 2026</strong>
-        <h3>AREA Île-de-France</h3>
-        <p>Développement et négociation GMS.</p>
-      </div>
-
-      <div class="event">
-        <strong>Septembre 2026</strong>
-        <h3>AREA Normandie</h3>
-        <p>Atelier « Entrer dans la décision avant vos négociations ».</p>
-      </div>
-
-    </div>
-
-
-  </div>
-</section>
-
-<!-- NOUVEAU : FAQ -->
-<section id="faq" class="alt faq">
-  <div class="container">
-
-    <div class="section-title">
-      <div class="eyebrow">Avant de m'appeler</div>
-      <h2>Les questions qu'on me pose souvent.</h2>
-    </div>
-
-    <details>
-      <summary>Mon entreprise est petite. Est-ce pour moi ?</summary>
-      <p>Oui. Les PME sont celles qui ont le moins de marge d'erreur face à une enseigne, et le moins d'occasions de voir comment une centrale fonctionne de l'intérieur.</p>
-    </details>
-
-    <details>
-      <summary>Vous intervenez où ?</summary>
-      <p>En priorité en Normandie, et aussi dans le Grand Ouest et partout en France, en présentiel ou à distance.</p>
-    </details>
-
-    <details>
-      <summary>Combien ça coûte ?</summary>
-      <p>Le CAP SCORE est gratuit. Pour les accompagnements, je vous fais une proposition après l'échange de 20 minutes, selon votre enjeu.</p>
-    </details>
-
-    <details>
-      <summary>Et si je travaille avec la même enseigne qu'un de vos clients ?</summary>
-      <p>Chaque échange reste confidentiel. S'il existe un conflit d'intérêts avec un client que j'accompagne, je vous le dis dès le premier échange.</p>
-    </details>
-
-  </div>
-</section>
-
-<section id="contact" class="final-cta">
-  <div class="container cta-grid">
-
-    <div>
-      <h2>Quel est votre prochain enjeu GMS ?</h2>
-      <p>
-        Référencement, développement d'une enseigne, hausse tarifaire, négociation annuelle,
-        rentabilité... On en parle 20 minutes, sans engagement.
-      </p>
-
-      <!-- NOUVEAU : ce qui se passe pendant les 20 minutes -->
-      <ol class="cta-steps">
-        <li>Vous m'exposez votre situation et votre prochaine échéance.</li>
-        <li>Je vous dis comment l'enseigne risque de la voir.</li>
-        <li>Vous repartez avec au moins une piste concrète, même si on ne travaille pas ensemble.</li>
-      </ol>
-
-      <p class="direct">
-        Vous préférez en direct : <a href="tel:+33660574197">06 60 57 41 97</a>
-        ou <a href="mailto:jerome.hardellet@conseil-action-performance.fr">par mail</a>.
-      </p>
-    </div>
-
-    <div class="cta-buttons">
-      <!-- PROVISOIRE : mail pré-rempli. À remplacer par un lien de prise de rendez-vous quand il existera -->
-      <a class="button button-blue" href="mailto:jerome.hardellet@conseil-action-performance.fr?subject=%C3%89change%2020%20minutes%20-%20mon%20enjeu%20GMS&body=Bonjour%20J%C3%A9r%C3%B4me%2C%0A%0AMon%20enjeu%20GMS%20en%20une%20phrase%20%3A%20%0A%0AMes%20disponibilit%C3%A9s%20%3A%20%0A">
-        Demander mes 20 minutes
-      </a>
-
-      <a class="button button-outline"
-         href="https://score.conseil-action-performance.fr"
-         target="_blank" rel="noopener">
-        Faire mon CAP SCORE
-      </a>
-    </div>
-
-  </div>
-</section>
-
-</main>
-
-<footer>
-  <div class="container footer-grid">
-
-    <div class="brand">
-      CAP <span>NEGO®</span>
-      <small>Conseil | Action | Performance</small>
-    </div>
-
-    <div class="contact-line">
-      <span><strong>Jérôme Hardellet</strong> — Consultant GMS</span>
-      <a href="tel:+33660574197">06 60 57 41 97</a>
-      <a href="mailto:jerome.hardellet@conseil-action-performance.fr">
-        jerome.hardellet@conseil-action-performance.fr
-      </a>
-      <a href="https://www.linkedin.com/in/j%C3%A9r%C3%B4me-hardellet/" target="_blank" rel="noopener">LinkedIn</a>
-    </div>
-
-    <div class="legal">
-      <a href="mentions-legales.html">Mentions légales</a> · <a href="politique-confidentialite.html">Politique de confidentialité</a><br>
-      © 2026 CAP NEGO®
-    </div>
-
-  </div>
-</footer>
-
-</body>
-</html>
